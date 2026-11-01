@@ -5,6 +5,7 @@ Catálogo estático em português dos livros de colorir infantis da Artlumi Book
 ## Conteúdo
 
 Edite index.html para atualizar textos, capas e links dos livros. Os estilos estão em assets/style.css; assets/site.js controla apenas o menu móvel.
+Para atualizar “Livros da semana” e “Próximos livros”, edite os cartões em index.html e as páginas em livros/; quando sair o ASIN, troque o link de busca da Amazon na chamada final da página do livro pelo link direto do produto.
 
 ## Publicação
 
