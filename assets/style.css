@@ -65,7 +65,7 @@ em { font-family: Georgia, serif; font-weight: 400; }
 .section-heading > p { max-width: 360px; margin: 0 0 5px; font-size: 1.06rem; }
 .books-grid { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 26px 20px; }
 .book-card { min-width: 0; margin: 0; }
-.book-card a { display: block; height: 100%; padding: 12px 12px 20px; border-radius: var(--radius); background: var(--cream); text-decoration: none; transition: transform .2s ease, box-shadow .2s ease; }
+.book-card a, .book-card-static { display: block; height: 100%; padding: 12px 12px 20px; border-radius: var(--radius); background: var(--cream); text-decoration: none; transition: transform .2s ease, box-shadow .2s ease; }
 .book-card a:hover { transform: translateY(-4px); box-shadow: 0 14px 26px rgba(46,42,37,.12); }
 .book-card img { width: 100%; height: auto; aspect-ratio: 681 / 900; border-radius: 14px; object-fit: cover; }
 .book-card .book-caption { padding: 18px 6px 0; }
@@ -73,6 +73,11 @@ em { font-family: Georgia, serif; font-weight: 400; }
 .book-card .original-title { margin: 0 0 14px; color: #555044; font-size: .88rem; line-height: 1.45; }
 .book-card .age { display: inline-block; padding: 5px 10px; border-radius: 999px; color: var(--green-dark); background: #e3e9d9; font-size: .76rem; font-weight: 800; }
 .book-card .card-link { display: block; margin-top: 14px; color: var(--green-dark); font-size: .88rem; font-weight: 800; }
+
+.book-preview { margin: 18px 6px 0; padding-top: 14px; border-top: 1px solid rgba(46,42,37,.14); }
+.book-preview p { margin: 0 0 10px; color: var(--green-dark); font-size: .88rem; font-weight: 800; }
+.book-preview-pages { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 8px; }
+.book-card .book-preview-pages img { aspect-ratio: 935 / 1210; border: 1px solid rgba(46,42,37,.14); border-radius: 8px; background: #fff; }
 
 .buy-section { color: #fff; background: var(--green); }
 .buy-grid { display: grid; grid-template-columns: minmax(0, 1fr) minmax(0, 1fr); align-items: center; gap: 7%; }
