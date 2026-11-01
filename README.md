@@ -10,3 +10,5 @@ Para atualizar “Livros da semana” e “Próximos livros”, edite os cartõe
 ## Publicação
 
 No repositório do GitHub, abra **Settings → Pages** e selecione **Deploy from a branch**, branch **main**, pasta **/ (root)**. O arquivo CNAME configura book.artlumi.com.br; o DNS do domínio também precisa apontar para o GitHub Pages. Para conferir localmente, rode python3 -m http.server na raiz.
+
+Ao alterar `assets/style.css` ou `assets/site.js`, troque o `?v=` nas referências em todos os HTML (index.html, 404.html e livros/), para os navegadores não usarem o arquivo antigo em cache.
